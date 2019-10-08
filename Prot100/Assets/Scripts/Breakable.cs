@@ -40,7 +40,7 @@ public class Breakable : MonoBehaviour
 			foreach (Transform piece in pieces)
 			{
 				piece.parent = transform.parent;
-				piece.GetComponent<CircleCollider2D>().isTrigger = false;
+				piece.GetComponent<Collider2D>().isTrigger = false;
 				piece.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 				piece.GetComponent<Rigidbody2D>().AddForce(new Vector2(Random.Range(-200.0f, 200.0f), Random.Range(-200.0f, 200.0f)));
 			}
