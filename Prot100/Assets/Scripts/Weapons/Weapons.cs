@@ -2,24 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum DAMAGETYPE
+//Weapon Class Start
+public enum DAMAGETYPE
 {
 	SOLID, FIRE, POISON, BLEEDING, CRITING
 };
 
-public class Weapon
+public abstract class Weapon: MonoBehaviour
 {
-	int damage;
-	DAMAGETYPE damageType;
-	int armorPenetration;
-	float switchSpeed;
-	float range;
-	float critRate;
-	float critDamage;
-	float weight;
-	float attackArc;
+	public int damage, armorPenetration;
+	public DAMAGETYPE damageType;
+	public float switchSpeed, range, critRate, critDamage, weight, attackArc;
+	public abstract void attack();
 }
-enum ELEMENT
+//Weapon Class End
+
+//Interfaces Start
+public enum ELEMENT
 {
 	AIR, EARTH, FIRE, WATER
 };
@@ -60,3 +59,4 @@ interface IDefendable
 	float parryRate { get; set; }
 	void parry();
 }
+//Interfaces End
