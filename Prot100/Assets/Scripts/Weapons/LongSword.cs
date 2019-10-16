@@ -4,28 +4,32 @@ using UnityEngine;
 
 public class LongSword : Weapon, ISwingable, IDefendable
 {
+	public Animator animator;
 
 	public float swingRate { get; set; }
 	
 	public void swing()
 	{
-		transform.Rotate(new Vector3(0f, 0f, attackArc));
+		animator.SetBool("IsSwing",true);
 	}
 
 	public float parryRate { get; set; }
 
 	public void parry()
 	{
-
+		animator.SetBool("IsParry", true);
 	}
 
 	override public void attack()
 	{
+		swing();
+	}
+	void finishAttack()
+	{
 		
 	}
-	
-    // Start is called before the first frame update
-    void Start()
+	// Start is called before the first frame update
+	void Start()
     {
         
     }
