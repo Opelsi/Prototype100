@@ -14,6 +14,7 @@ public abstract class Weapon: MonoBehaviour
 	public DAMAGETYPE damageType;
 	public float switchSpeed, range, critRate, critDamage, weight, attackArc;
 	public abstract void attack();
+	public abstract void resetWeapon();
 }
 //Weapon Class End
 

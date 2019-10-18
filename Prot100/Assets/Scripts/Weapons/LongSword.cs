@@ -19,14 +19,14 @@ public class LongSword : Weapon, ISwingable, IDefendable
 	{
 		animator.SetBool("IsParry", true);
 	}
-
 	override public void attack()
 	{
 		swing();
 	}
-	void finishAttack()
+	override public void resetWeapon()
 	{
-		
+		animator.SetBool("IsSwing", false);
+		animator.SetBool("IsParry", false);
 	}
 	// Start is called before the first frame update
 	void Start()

@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlayerAttack
+  m_Name: BowShoot
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,15 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: e041d337bf29a8d4bbcac83a1f87e195, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: 8c7a8238aa6760b4b862f90eb18fa765, type: 3}
+      value: {fileID: 21300000, guid: cdde37632ba97ca49837bbbdf2c57c5a, type: 3}
+    - time: 0.083333336
+      value: {fileID: 21300000, guid: ac7fe91ee9af4f449841daf9c1b048d5, type: 3}
+    - time: 0.16666667
+      value: {fileID: 21300000, guid: b289575d305d4aa48bfe740d02b79e5a, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: a2ee3e88fdf1aae428a9cf5343a6ed7a, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300000, guid: a2ee3e88fdf1aae428a9cf5343a6ed7a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,19 +48,22 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: e041d337bf29a8d4bbcac83a1f87e195, type: 3}
-    - {fileID: 21300000, guid: 8c7a8238aa6760b4b862f90eb18fa765, type: 3}
+    - {fileID: 21300000, guid: cdde37632ba97ca49837bbbdf2c57c5a, type: 3}
+    - {fileID: 21300000, guid: ac7fe91ee9af4f449841daf9c1b048d5, type: 3}
+    - {fileID: 21300000, guid: b289575d305d4aa48bfe740d02b79e5a, type: 3}
+    - {fileID: 21300000, guid: a2ee3e88fdf1aae428a9cf5343a6ed7a, type: 3}
+    - {fileID: 21300000, guid: a2ee3e88fdf1aae428a9cf5343a6ed7a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0166667
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
