@@ -50,10 +50,10 @@ public class WeaponController : MonoBehaviour
 
 	private void FinishAttack()
 	{
+		currentWeapon.gameObject.GetComponent<Weapon>().resetWeapon();
 		currentWeapon.gameObject.SetActive(false);
 		animator.SetBool("IsAttack", false);
 		animator.SetBool("IsBow", false);
-		currentWeapon.gameObject.GetComponent<Weapon>().resetWeapon();
 		m_wasAttacking = false;
 		m_wasReloading = false;
 		m_wasParrying = false;
