@@ -155,3 +155,4 @@ MonoBehaviour:
   attackArc: 0
   animator: {fileID: 2634028357983492034}
   bulletPoint: {fileID: 2634028356279935565}
+  bullet: {fileID: 4057304397441002656, guid: 5ba1fcbccfdd939419242886669468f5, type: 3}

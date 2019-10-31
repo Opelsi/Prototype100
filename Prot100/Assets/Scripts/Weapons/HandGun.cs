@@ -6,20 +6,35 @@ public class HandGun : Weapon, IShootable, IReloadable
 {
 	public Animator animator;
 	public Transform bulletPoint;
+	public Projectile bullet;
 
 	public float rateOfFire { get; set; }
 	public float projectileSpeed { get; set; }
 	public void shoot()
 	{
 		animator.SetBool("IsShoot", true);
-		//Spawn bullet
 	}
 	public float reloadRate { get; set; }
 	public void reload()
 	{
 		animator.SetBool("IsReload", true);
 	}
-
+	public void spawnBullet()
+	{
+		bullet.transform.position = bulletPoint.position;
+		if (transform.parent.localScale.x > 0f)
+		{
+			Debug.Log(transform.parent.localScale.x);
+			bullet.forwardVelocity = 600;
+			bullet.transform.localScale = (new Vector2(1, 1));
+		}
+		else
+		{
+			Debug.Log(transform.parent.localScale.x);
+			bullet.forwardVelocity = -600;
+		}
+		Instantiate(bullet);
+	}
 	override public void attack()
 	{
 		shoot();
