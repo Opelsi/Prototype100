@@ -19,8 +19,8 @@ TagManager:
   - Brekable
   - Player
   - Interactive
-  - 
-  - 
+  - PlayerAttack
+  - EnemyAttack
   - 
   - 
   - 
