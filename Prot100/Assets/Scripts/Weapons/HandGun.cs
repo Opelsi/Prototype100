@@ -53,6 +53,6 @@ public class HandGun : Weapon, IShootable, IReloadable
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

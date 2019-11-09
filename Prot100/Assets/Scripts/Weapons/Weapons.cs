@@ -12,7 +12,7 @@ public abstract class Weapon: MonoBehaviour
 {
 	public int damage, armorPenetration;
 	public DAMAGETYPE damageType;
-	public float switchSpeed, range, critRate, critDamage, weight, attackArc;
+	public float switchSpeed, range, critRate, critDamage, weight, attackRate;
 	public abstract void attack();
 	public abstract void resetWeapon();
 }

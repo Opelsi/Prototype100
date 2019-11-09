@@ -54,5 +54,6 @@ public class Bow : Weapon, IReloadable, IShootable
 	// Update is called once per frame
 	void Update()
 	{
+		
 	}
 }

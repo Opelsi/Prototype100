@@ -34,6 +34,6 @@ public class FireBallSpell : Weapon, IMagical, IShootable
     // Update is called once per frame
     void Update()
     {
-        
+		
     }
 }

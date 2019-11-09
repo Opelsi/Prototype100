@@ -607,6 +607,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5426363012203018006, guid: d525dd9ef0567de45a216085fbe9cf09,
+        type: 3}
+      propertyPath: canUse
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d525dd9ef0567de45a216085fbe9cf09, type: 3}
 --- !u!1 &394225777
@@ -1132,6 +1137,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1445922522086954341, guid: dc2cc82085e915b4fb1e856c9ab9c1d6,
+        type: 3}
+      propertyPath: canUse
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc2cc82085e915b4fb1e856c9ab9c1d6, type: 3}
 --- !u!1001 &1030678234
@@ -1413,7 +1423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1144662852}
-  speed: 15
+  speed: 20
   nextWaypointDistance: 3
   attackRange: 2
   isFollow: 0

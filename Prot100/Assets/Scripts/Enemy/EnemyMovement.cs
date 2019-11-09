@@ -64,21 +64,12 @@ public class EnemyMovement : MonoBehaviour
 	void FollowTarget()
 	{
 		direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-
-		if (direction.x > 0.1f)
-		{
-			transform.localScale = new Vector3(1f, 1f, 1f);
-		}
-		if (direction.x < 0.1f)
-		{
-			transform.localScale = new Vector3(-1f, 1f, 1f);
-		}
-
+		
 		float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 		if (distance < nextWaypointDistance)
 		{
 			currentWaypoint++;
-			enemyAnimator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+			enemyAnimator.SetFloat("Speed" , Mathf.Abs(rb.velocity.x));
 		}
 
 		if (Mathf.Abs(rb.velocity.y) < 0.1f && direction.y > 0.7f && Time.time - jumpTimer > 2f)
@@ -94,6 +85,16 @@ public class EnemyMovement : MonoBehaviour
 
 		Vector2 force = direction * speed * Time.deltaTime;
 		controller.Move(force.x, false, isJump, false, false, false);
+		//Flip enemy towards player, because controller.Move() flips enemy according to movement
+		if (direction.x > 0.1f)
+		{
+			transform.localScale = new Vector3(1f, 1f, 1f);
+		}
+		if (direction.x < 0.1f)
+		{
+			transform.localScale = new Vector3(-1f, 1f, 1f);
+		}
+
 		isJump = false;
 	}
 
